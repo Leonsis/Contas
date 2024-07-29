@@ -1,5 +1,5 @@
 const valorMetas = [];
-function calc() {
+function calc(valoresMetas) {
     const qMetas = parseInt(document.getElementById('qMetas').value);
     const valorTotal = parseFloat(document.getElementById('valor').value);
     const somaPrioridades = grau.reduce((acc, curr) => acc + curr, 0);
@@ -19,6 +19,15 @@ function calc() {
         }
         valorMetas.sort((a, b) => b - a);
     }
+    calcTempo(valorMetas, valoresMetas)
+}
+
+let meses = [];
+function calcTempo(valorMetas, valoresMetas) {
     console.log(grau);
     console.log(valorMetas);
+    console.log(valoresMetas);
+    for(let a = 0; a < qMetas.value; a ++) {
+        meses.push(Math.ceil(valoresMetas[a] / valorMetas[a])); 
+    }
 }
