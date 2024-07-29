@@ -6,7 +6,6 @@ let a = 0
 function planejar(event) {
     event.preventDefault();
     if(a === 0) {
-        calc();
         let planejamentos = document.getElementById('planejamentos');
         planejamentos.classList.remove('d-none');
         let dados = document.getElementById('dados');
@@ -32,6 +31,8 @@ function planejar(event) {
 
         document.getElementById('reservaE').innerHTML = opcao;
         let qMetas = document.getElementById('qMetas').value;
+
+        calc(valoresMetas);
         for(let a = 0; a < qMetas; a++) {
             const nav = document.createElement('nav');
             nav.classList.add('col-12');
@@ -42,7 +43,7 @@ function planejar(event) {
                 mensagem = document.createTextNode(`1º Reserva de emergencia | Valor a contribuir por mês: R$${valorMetas[0]}`);
                 valorSelecionado = 0;
             } else {
-                mensagem = document.createTextNode(`${grau[a]}º ${metas[a]}, Valor: R$${valoresMetas[a].toFixed(2)} | Valor a contribuir por mês: R$${valorMetas[a]}`);
+                mensagem = document.createTextNode(`${grau[a]}º ${metas[a]}, Valor: R$${valoresMetas[a].toFixed(2)} | Valor a contribuir por mês: R$${valorMetas[a]} | Você ira ateingir está meta em ${meses[a]} meses`);
             }
             nav.appendChild(mensagem);
         }
