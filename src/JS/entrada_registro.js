@@ -164,6 +164,12 @@ function registraDados(event, nomeMeta, valorMeta, grauMeta, n, valorSelecionado
         span.id = 'botao' + n;
         span.classList = 'botao'; 
         document.getElementById('botao' + n).innerHTML = 'REGISTRADO';
+
+        const botaoP = document.getElementById('botaoP');
+        if(n == qMetas.value) {
+            botaoP.classList.remove('d-none');
+        }
+        
     } else {
         alert(`Só pode registrar a quantidade de metas que foi informado!!`)
     }
