@@ -43,7 +43,7 @@ function planejar(event) {
                 mensagem = document.createTextNode(`1º Reserva de emergencia | Valor a contribuir por mês: R$${valorMetas[0]}`);
                 valorSelecionado = 0;
             } else {
-                mensagem = document.createTextNode(`${grau[a]}º ${metas[a]}, Valor: R$${valoresMetas[a].toFixed(2)} | Valor a contribuir por mês: R$${valorMetas[a]} | Você ira ateingir está meta em ${meses[a]} meses`);
+                mensagem = document.createTextNode(`${grau[a]}º ${metas[a]}, Valor: R$${valoresMetas[a].toFixed(2)} | Valor a contribuir por mês: R$${valorMetas[a]} | Você irá atingir esta meta em ${meses[a]} meses.`);
             }
             nav.appendChild(mensagem);
         }
