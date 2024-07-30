@@ -1,0 +1,27 @@
+#planejamentos {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--cor-principal);
+}
+
+#planejamentos nav{
+    border-bottom: 1px solid var(--cor-principal);
+    margin: 5px 3px;
+}
+
+#planejamentos .reserva {
+    margin: 0;
+}
+
+#planejamentos #dadosPrincipais div{
+    margin: 0;
+}
+
+#planejamentos #metas .dadosMetas {
+    margin: 0;
+}
+
+#planejamentos button {
+    color: var(--cor-branco);
+    background: var(--cor-principal);
+}

@@ -1,0 +1,9 @@
+header {
+    border-bottom: 1px solid var(--cor-principal);
+}
+
+header h1{
+    display: inline;
+    margin-left: 10px;
+    color: var(--cor-secudaria);
+}
