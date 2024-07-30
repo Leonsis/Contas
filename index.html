@@ -65,7 +65,11 @@
                                     <div class="input-group valor">
                                         <div>Qual valor você vai investir por mês para essas metas?</div>
                                         <input id="valor" class="form-control bordai" type="text" placeholder="200.00" style="text-align: center;" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
-                                    </div>
+                                    </div>  
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6 linha">
+                                <fieldset><!-- É usado para agrupar dados semehantes -->
                                     <div id="opcao" class="opcao">
                                         <span for="nome" class="col-6">Você deseja incluir uma reserva de emergência?</span>
                                         <br>
@@ -81,11 +85,7 @@
                                         <div id="aviso" class="d-none">
                                             É obrigatorio informar se deseja reserva ou não!
                                         </div>
-                                    </div>  
-                                </fieldset>
-                            </div>
-                            <div class="col-md-6 linha">
-                                <fieldset><!-- É usado para agrupar dados semehantes -->
+                                    </div>
                                     <div class="row box">
                                         <label for="nome" class="col-6">Nome da meta:</label>
                                         <div class="col-6">
