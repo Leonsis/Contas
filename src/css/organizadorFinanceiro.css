@@ -51,6 +51,8 @@ section#organizadorFinanceiro fieldset #aviso{
     border-radius: 5px;
     padding: 5px;
     position: absolute;
+    display: inline;
+    z-index: 1;
 }
 
 section#organizadorFinanceiro .meta,
