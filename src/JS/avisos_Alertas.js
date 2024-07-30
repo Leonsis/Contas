@@ -15,8 +15,7 @@ function removerAlerta() {
 
 const aviso = document.getElementById('aviso')
 function alerta() {
-    aviso.classList.remove(
-'d-none');
+    aviso.classList.remove('d-none');
 }
 
 function remuveAlerta() {
