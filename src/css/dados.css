@@ -1,0 +1,10 @@
+section#dados .bloco .caixa{
+    border: 1px solid var(--cor-principal);
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+section#dados{
+    margin-bottom: 10px;
+}
