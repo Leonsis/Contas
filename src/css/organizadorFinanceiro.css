@@ -93,3 +93,9 @@ section#organizadorFinanceiro .row{
 .obsTesto {
     font-size: 0.8em;
 }
+
+@media (max-width: 1200px) {
+    section#organizadorFinanceiro fieldset #aviso{
+        display: block;
+    }
+}
