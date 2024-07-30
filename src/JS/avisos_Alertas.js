@@ -7,6 +7,12 @@ function alerta2() {
     boxValorMeta.classList.add('d-none');
 }
 
+function removerAlerta() {
+    obs.classList.add('d-none');
+    boxNome.classList.remove('d-none');
+    boxValorMeta.classList.remove('d-none');
+}
+
 const aviso = document.getElementById('aviso')
 function alerta() {
     aviso.classList.remove(
