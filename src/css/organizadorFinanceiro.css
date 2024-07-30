@@ -89,3 +89,7 @@ section#organizadorFinanceiro .row{
     padding: 5px;
     border-radius: 5px;
 }
+
+.obsTesto {
+    font-size: 0.8em;
+}
