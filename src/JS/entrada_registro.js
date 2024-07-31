@@ -146,8 +146,10 @@ function registraDados(event, nomeMeta, valorMeta, n, valorSelecionado) {
         document.getElementById('botao' + n).innerHTML = 'REGISTRADO';
 
         const botaoP = document.getElementById('botaoP');
+        const botaoR = document.getElementById('botaoR');
         if(n == qMetas.value) {
             botaoP.classList.remove('d-none');
+            botaoR.classList.add('d-none');
         }
         
     } else {
