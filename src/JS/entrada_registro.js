@@ -70,37 +70,32 @@ function entrada_dados(event){
                     } else {
                         nomeMeta = document.getElementById('nomeMeta').value;
                         valorMeta = parseFloat(document.getElementById('valorMeta').value);
+                        document.getElementById('nomeMeta').value = '';
+                        document.getElementById('valorMeta').value = '';
                         
-                        if(valorMeta < 0) {
-                            alert('Foi informado valores invalidos nos campos Valor da meta e Grau de prioridade! Por gentileza arrumar!')
-                        } else {
-                            document.getElementById('nomeMeta').value = '';
-                            document.getElementById('valorMeta').value = '';
-                            
-                            n += 1;
-                            
-                            qMetas.classList.remove('erro');
-                            qMetas.classList.add('bordai');
+                        n += 1;
+                        
+                        qMetas.classList.remove('erro');
+                        qMetas.classList.add('bordai');
 
-                            valor.classList.remove('erro');
-                            valor.classList.add('bordai');
+                        valor.classList.remove('erro');
+                        valor.classList.add('bordai');
 
-                            let elemento3 = document.getElementById('opcao');
-                            elemento3.classList.remove('erro');
+                        let elemento3 = document.getElementById('opcao');
+                        elemento3.classList.remove('erro');
 
-                            let elemento4 = document.getElementById('nomeMeta');
-                            elemento4.classList.remove('erro');
-                            elemento4.placeholder = 'Meta';
-                            elemento4.classList.add('bordai');
+                        let elemento4 = document.getElementById('nomeMeta');
+                        elemento4.classList.remove('erro');
+                        elemento4.placeholder = 'Meta';
+                        elemento4.classList.add('bordai');
 
-                            let elemento5 = document.getElementById('valorMeta');
-                            elemento5.classList.remove('erro');
-                            elemento5.placeholder = '200.00';
-                            elemento5.classList.add('bordai');
-                            
-                            registraDados(event, nomeMeta, valorMeta, n, valorSelecionado);
-                        }
-                    }
+                        let elemento5 = document.getElementById('valorMeta');
+                        elemento5.classList.remove('erro');
+                        elemento5.placeholder = '200.00';
+                        elemento5.classList.add('bordai');
+                        
+                        registraDados(event, nomeMeta, valorMeta, n, valorSelecionado);
+                    }    
                 }
             }
         }
