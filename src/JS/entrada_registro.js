@@ -108,51 +108,46 @@ function entrada_dados(event){
 }
 
 function registraDados(event, nomeMeta, valorMeta, n, valorSelecionado) {
-    if(n <= parseInt(qMetas.value)) {
-        qMetas.setAttribute('readonly', true);
+    qMetas.setAttribute('readonly', true);
         
-        valor.setAttribute('readonly', true);
+    valor.setAttribute('readonly', true);
 
-        event.preventDefault();// Para cortar o evento onclick.
-        const div = document.createElement('div');// Criando a tag div
-        let mensagem;
-        if(valorSelecionado === 1) {
-            grauMeta ++;
-            mensagem = document.createTextNode(`${grauMeta}º Reserva de emergencia`);
-        } else {
-            if(n > grauMeta) {
-                grauMeta += 1;
-            }
-            mensagem = document.createTextNode(`${grauMeta}º ${nomeMeta}, Valor: R$${valorMeta}`);
-        }
-        const bloco = document.querySelector('.bloco');
-        bloco.insertAdjacentElement("beforeend", div);
-        div.id = 'div' + n;
-        div.classList = 'caixa' + n;
-        div.classList.add('caixa');
-        div.classList.add('col-12');
-        div.classList.add('d-flex');
-        div.classList.add('justify-content-between');
-        div.appendChild(mensagem);
-
-        metas.push(nomeMeta);
-        valoresMetas.push(valorMeta);
-        
-        const span = document.createElement('span');
-        const caixa = document.querySelector('.caixa' + n);
-        caixa.insertAdjacentElement("beforeend", span);
-        span.id = 'botao' + n;
-        span.classList = 'botao'; 
-        document.getElementById('botao' + n).innerHTML = 'REGISTRADO';
-
-        const botaoP = document.getElementById('botaoP');
-        const botaoR = document.getElementById('botaoR');
-        if(n == qMetas.value) {
-            botaoP.classList.remove('d-none');
-            botaoR.classList.add('d-none');
-        }
-        
+    event.preventDefault();// Para cortar o evento onclick.
+    const div = document.createElement('div');// Criando a tag div
+    let mensagem;
+    if(valorSelecionado === 1) {
+        grauMeta ++;
+        mensagem = document.createTextNode(`${grauMeta}º Reserva de emergencia`);
     } else {
-        alert(`Só pode registrar a quantidade de metas que foi informado!!`)
+        if(n > grauMeta) {
+            grauMeta += 1;
+        }
+        mensagem = document.createTextNode(`${grauMeta}º ${nomeMeta}, Valor: R$${valorMeta}`);
+    }
+    const bloco = document.querySelector('.bloco');
+    bloco.insertAdjacentElement("beforeend", div);
+    div.id = 'div' + n;
+    div.classList = 'caixa' + n;
+    div.classList.add('caixa');
+    div.classList.add('col-12');
+    div.classList.add('d-flex');
+    div.classList.add('justify-content-between');
+    div.appendChild(mensagem);
+
+    metas.push(nomeMeta);
+    valoresMetas.push(valorMeta);
+    
+    const span = document.createElement('span');
+    const caixa = document.querySelector('.caixa' + n);
+    caixa.insertAdjacentElement("beforeend", span);
+    span.id = 'botao' + n;
+    span.classList = 'botao'; 
+    document.getElementById('botao' + n).innerHTML = 'REGISTRADO';
+
+    const botaoP = document.getElementById('botaoP');
+    const botaoR = document.getElementById('botaoR');
+    if(n == qMetas.value) {
+        botaoP.classList.remove('d-none');
+        botaoR.classList.add('d-none');
     }
 }
