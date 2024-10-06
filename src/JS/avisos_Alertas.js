@@ -12,12 +12,3 @@ function removerAlerta() {
     boxNome.classList.remove('d-none');
     boxValorMeta.classList.remove('d-none');
 }
-
-const aviso = document.getElementById('aviso')
-function alerta() {
-    aviso.classList.remove('d-none');
-}
-
-function remuveAlerta() {
-    aviso.classList.add('d-none');
-}
