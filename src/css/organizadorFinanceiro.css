@@ -98,3 +98,10 @@ section#organizadorFinanceiro .row{
         display: block;
     }
 }
+
+/*
+    Aqui eu estou colocando um hover em uma tag irmã da div#aviso.
+*/
+svg#alerta1:hover + div#aviso {
+    display: block !important;
+}
