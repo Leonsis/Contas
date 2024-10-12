@@ -89,6 +89,7 @@ ul.menu li a {
     color: var(--cor-secundaira);
 }
 
+logo a:hover,
 ul.menu li a:hover {
     text-decoration: none;
 }
