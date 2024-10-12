@@ -106,6 +106,10 @@ header .logo h1 {
             
 
 @media (max-width: 700px) {
+  header .logo {
+    top: 10px;
+  }
+  
   header { 
     margin: 0;
   }
