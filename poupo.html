@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="src/css/header.css">
+        <link rel="stylesheet" href="src/css/variaveis.css">
+        <link rel="stylesheet" href="src/css/organizadorFinanceiro.css">
+        <link rel="stylesheet" href="src/css/dados.css">
+        <link rel="stylesheet" href="src/css/planejamentos.css">
+        <link rel="stylesheet" href="src/css/descricao.css">
+        <link rel="stylesheet" href="src/css/footer.css">
+        <link rel="stylesheet" href="src/css/geral.css">
+
+        <!-- font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <title>Contas</title>
+        <link rel="icon" href="src/img/logo2.png">
+    </head>
+    <body>
+        <header class="top-nav" >
+            <div class="logo">
+                <a href="poupo.html" class="d-flex">
+                    <img src="src/img/logo2.png" alt="Logo">
+                    <h1>Poupo</h1>
+                </a>
+            </div>
+            <input id="menu-toggle" type="checkbox"/>
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li>
+                    <a href="https://leonsis.github.io/ContasList/">Cadastro</a>
+                </li>
+                <li>
+                    <a href="https://leonsis.github.io/ContasList/consulta.html">Consulta</a>
+                </li>
+                <li >
+                    <a href="index.html">Contas</a>
+                </li>
+            </ul>
+        </header>
+
+        <section id="descricao">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 d-flex align-items-center">
+                        <div class="testo">
+                            <img src="src/img/logo2.png" alt="">
+                            <h2>Bem vindo ao <span>Poupo</span></h2>
+                            <p>Uma plataforma inovadora para ajudar você a gerenciar melhor suas finanças e alcançar seus objetivos de forma mais eficaz. </p>
+                        </div>
+                    </div>
+                    <div class="col-6 d-none d-md-block">
+                        <div class="imagem">
+                            <img src="src/img/9211510__1_-removebg-preview.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="triangulo"></div>
+        </section>
+
+        <section id="organizadorFinanceiro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="imagem">
+                            <img src="src/img/image10.jpg" class="img-fluid" style="border-radius: 20px;">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="testo" style="text-align: left;">
+                            <p>
+                                <h3>
+                                    <span style="border-bottom: 1px solid var(--cor-principal);">
+                                        O que é o <strong>Poupo</strong>?
+                                    </span>
+                                </h3> 
+                                Uma plataforma inovadora de economia financeira, 
+                                projetada para ajudar você a gerenciar melhor suas finanças 
+                                e alcançar seus objetivos de forma mais eficaz. Através de 
+                                uma interface intuitiva, o sistema oferece ferramentas que 
+                                simplificam a organização das suas dívidas e metas financeiras, 
+                                garantindo mais controle sobre o seu dia a dia.
+                            </p>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>&nbsp;<strong>Planejador de Metas</strong>:
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            onde você pode definir e acompanhar suas metas financeiras 
+                                            ou planejar o pagamento de dívidas de forma estratégica e 
+                                            personalizada.
+                                        </li>
+                                    </ul>
+                                </li>
+                                </br>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>&nbsp;<strong>Organizador de Dívidas</strong>:
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            onde você pode definir e acompanhar suas metas financeiras 
+                                            ou planejar o pagamento de dívidas de forma estratégica e 
+                                            personalizada.
+                                        </li>
+                                    </ul>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <footer>
+            <div class="container d-flex align-items-baseline">
+                <img src="src/img/logo2.png">
+                <h1>Contas</h1>
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="src/JS/entrada_registro.js"></script>
+        <script src="src/JS/avisos_Alertas.js"></script>
+        <script src="src/JS/calculo.js"></script>
+        <script src="src/JS/planejar.js"></script>
+        <script src="src/JS/download.js"></script>
+
+        <!-- jsPDF -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+        <!-- html2canvas -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
