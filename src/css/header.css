@@ -47,7 +47,7 @@ header {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #00ff7f;
+  background-color: var(--cor-branco);
   position: absolute;
   height: 4px;
   width: 30px;
