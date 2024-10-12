@@ -1,4 +1,12 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
     color: var(--cor-secudaria);
 }
 
