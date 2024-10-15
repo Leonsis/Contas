@@ -1,6 +1,6 @@
-section#descricao {
+/*section#descricao {
     border-top: 1px solid var(--cor-branco);
-}
+}*/
 
 section#descricao h2{
    font-size: 2.5rem;
